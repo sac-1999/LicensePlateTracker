@@ -104,9 +104,9 @@ Use the trained model to detect license plates on images, videos, or streams.
       # See the out put in output folder under assignment.
    ```
 
-| Column 1           | Column 2           | Column 3           |
+| Output1           | Output2           | Output3          |
 |---------------------|--------------------|--------------------|
-| ![Image1](assignment/Output/data1.png) | ![Image2](assignment/Output/data2.png) | ![Image3](assignment/Output/data3.png) |
+| ![Image1](assignment/Output/data1.png) | ![Image2](assignment/Output/data6.png) | ![Image3](assignment/Output/data9.png) |
 
 ## **Usage**
 
