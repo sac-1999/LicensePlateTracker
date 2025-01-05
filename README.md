@@ -102,7 +102,8 @@ We use the Robo dataset for training, which contains annotated images of license
 Use the trained model to detect license plates on images, videos, or streams.
 
 ## **OpenCV Image Processing**
-   ```python inference.py
+   ```python
+      inference.py
    ```
 
 ## **Usage**
