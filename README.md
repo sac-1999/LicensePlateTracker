@@ -101,7 +101,7 @@ Use the trained model to detect license plates on images, videos, or streams.
 ## **OpenCV Image Processing**
    ```python
       python inference.py
-      # See the out put in output folder under assignment.
+      # See the output of all images in assignment/Output/data1.png.
    ```
 
 | Output1           | Output2           | Output3          |
