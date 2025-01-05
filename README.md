@@ -61,30 +61,22 @@ We use the Robo dataset for training, which contains annotated images of license
 
 ### **Steps to Download the Dataset:**
 
-1. Clone the dataset repository or download it from the official source:
-   ```bash
-   git clone https://github.com/roboflow/dataset-repo-name.git
-   ```
-
-2. Extract the dataset and structure it as follows:
-   ```
-   yolov7-license-plate-detection-3/
-   ├── train/
-   │   ├── images/
-   │   └── labels/
-   ├── valid/
-   │   ├── images/
-   │   └── labels/
-   ```
+1. ```python
+from roboflow import Roboflow
+rf = Roboflow(api_key="lu08WwdIJ89fRfTh16mT")
+project = rf.workspace("kanwal-masroor-gv4jr").project("yolov7-license-plate-detection")
+version = project.version(3)
+dataset = version.download("yolov8")
+```
 
 3. Modify the `data.yaml` file to match your dataset paths:
    ```yaml
-   train: /path/to/train/images
-   val: /path/to/valid/images
-   nc: 1  # Number of classes
-   names: ['license_plate']
+   train: ../train/images
+   val: ../valid/images
+   test: ../test/images
+   nc: 1
+   names: ['licenseplate']
    ```
-
 ---
 
 ## **YOLOv8 Training**
