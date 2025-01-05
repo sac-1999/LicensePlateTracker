@@ -15,9 +15,6 @@ This project demonstrates license plate detection using YOLOv8, starting from do
 6. [Inference](#inference)
 7. [OpenCV Image Processing](#opencv-image-processing)
 8. [Usage](#usage)
-9. [Results](#results)
-10. [Contributing](#contributing)
-11. [License](#license)
 
 ---
 
