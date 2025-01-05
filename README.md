@@ -103,6 +103,7 @@ Use the trained model to detect license plates on images, videos, or streams.
       python inference.py
       # See the out put in output folder under assignment.
    ```
+![License plate masking Images](images/example_image.jpg)
 
 ## **Usage**
 
