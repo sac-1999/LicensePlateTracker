@@ -103,54 +103,9 @@ dataset = version.download("yolov8")
 
 Use the trained model to detect license plates on images, videos, or streams.
 
-### **Run Inference on an Image:**
-```python
-from ultralytics import YOLO
-
-model = YOLO('/path/to/best.pt')  # Load the trained model
-results = model('/path/to/image.jpg', conf=0.5)
-
-# Visualize results
-results.show()
-```
-
-### **Run Inference on a Video:**
-```python
-results = model('/path/to/video.mp4', conf=0.5)
-results.show()
-```
-
----
-
 ## **OpenCV Image Processing**
-
-OpenCV is used for post-processing detected license plates.
-
-### **Steps for Processing:**
-
-1. **Preprocessing Image:**
-   ```python
-   import cv2
-
-   img = cv2.imread('/path/to/image.jpg')
-   gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-   blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-   cv2.imshow('Processed Image', blurred)
-   cv2.waitKey(0)
+   ```python inference.py
    ```
-
-2. **Cropping Detected License Plates:**
-   Use bounding boxes from YOLOv8 to crop and isolate the license plate.
-
-   ```python
-   for result in results.xyxy[0]:  # Bounding boxes
-       x1, y1, x2, y2, conf, cls = map(int, result)
-       cropped = img[y1:y2, x1:x2]
-       cv2.imshow('Cropped Plate', cropped)
-       cv2.waitKey(0)
-   ```
-
----
 
 ## **Usage**
 
@@ -162,32 +117,3 @@ OpenCV is used for post-processing detected license plates.
 ### **Inference**
 1. Use the trained weights for inference.
 2. Visualize results or save the output.
-
----
-
-## **Results**
-
-Example outputs:
-
-1. **Image Detection:**
-   ![Image Detection Example](example_image_detection.png)
-
-2. **Video Detection:**
-   ![Video Detection Example](example_video_detection.gif)
-
-3. **OpenCV Processed Image:**
-   ![Processed Image Example](example_processed_image.png)
-
----
-
-## **Contributing**
-
-Contributions are welcome! Please submit a pull request or raise an issue for bugs or feature requests.
-
----
-
-## **License**
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
----
