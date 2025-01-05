@@ -67,8 +67,7 @@ We use the Robo dataset for training, which contains annotated images of license
     version = project.version(3)
     dataset = version.download("yolov8")
    ```
-
-2. Modify the `data.yaml` file to match your dataset paths:
+   Modify the `data.yaml` file to match your dataset paths:
    ```yaml
    train: ../train/images
    val: ../valid/images
