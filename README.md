@@ -59,7 +59,7 @@ We use the Robo dataset for training, which contains annotated images of license
 ### **Steps to Download the Dataset:**
    ```python
     from roboflow import Roboflow
-    rf = Roboflow(api_key="lu08WwdIJ89fRfTh16mT")
+    rf = Roboflow(api_key="your api key")
     project = rf.workspace("kanwal-masroor-gv4jr").project("yolov7-license-plate-detection")
     version = project.version(3)
     dataset = version.download("yolov8")
